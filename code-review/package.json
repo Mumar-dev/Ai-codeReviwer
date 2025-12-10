@@ -1,0 +1,11 @@
+{
+  "name": "code-review-app",
+  "scripts": {
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "npm --prefix ./BackEnd run start:server",
+    "start:frontend": "npm --prefix ./Frontend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
